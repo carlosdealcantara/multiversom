@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MultiverSOM — Músicas Autorais de Sérgio Melo</title>
+  <meta name="description" content="MultiverSOM é o projeto autoral de Sérgio Melo: músicas compostas com alma, letra e melodia originais, ganham vida com Inteligência Artificial. Conheça o portfólio e encomende sua música.">
+  <meta property="og:title" content="MultiverSOM — Músicas Autorais de Sérgio Melo">
+  <meta property="og:description" content="Do coração pro mundo. Músicas autorais compostas por Sérgio Melo.">
+  <meta property="og:image" content="assets/images/bannermvm.jpg">
+  <link rel="icon" href="assets/logo/logomvm.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation"></nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" aria-label="Apresentação do MultiverSOM">
+    <div class="hero-bg"></div>
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Músicas Autorais · Composição Original
+      </div>
+
+      <img src="assets/logo/logomvm.png"
+           alt="Logo MultiverSOM — fones de ouvido dourados sobre galáxia"
+           class="hero-logo"
+           width="160" height="160">
+
+      <h1 class="hero-title">
+        <span class="multi">MultiverSOM</span><br>
+        <span style="font-size:0.55em; font-weight:500; color:var(--text-muted);">@Autoral</span>
+      </h1>
+
+      <p class="hero-subtitle-name">por Sérgio Melo</p>
+
+      <p class="hero-tagline">"Do coração pro mundo"</p>
+
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn btn-primary" id="hero-btn-portfolio">
+          🎵 Ver Portfólio
+        </a>
+        <a href="#pilares" class="btn btn-outline" id="hero-btn-conheca">
+          Conheça o Projeto ↓
+        </a>
+      </div>
+    </div>
+
+    <!-- Audio wave decoration -->
+    <div class="hero-wave" aria-hidden="true"></div>
+  </section>
+
+  <!-- PILARES -->
+  <section id="pilares" aria-labelledby="pilares-title">
+    <div class="container">
+      <div class="text-center reveal">
+        <p class="section-label">O que fazemos</p>
+        <h2 class="section-title" id="pilares-title">
+          Quatro pilares de uma <span>música que fica</span>
+        </h2>
+        <p class="section-lead">
+          Cada composição de Sérgio Melo é construída sobre esses valores — antes mesmo da IA entrar em cena.
+        </p>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar-card reveal reveal-delay-1">
+          <span class="pillar-icon">🖊️</span>
+          <h3>Letra que toca a alma</h3>
+          <p>Cada palavra é escolhida a dedo. A história é real, o sentimento é genuíno.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-2">
+          <span class="pillar-icon">💜</span>
+          <h3>Vibe que conecta</h3>
+          <p>A melodia é criada e cantada por Sérgio antes de qualquer tecnologia.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-3">
+          <span class="pillar-icon">🎵</span>
+          <h3>Som que marca</h3>
+          <p>A IA interpreta o que o artista já criou — amplificando, não substituindo.</p>
+        </div>
+        <div class="pillar-card reveal reveal-delay-4">
+          <span class="pillar-icon">⭐</span>
+          <h3>Hits que ficam</h3>
+          <p>Músicas que as pessoas guardam, compartilham e se emocionam para sempre.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- DESTAQUES DO PORTFÓLIO -->
+  <section aria-labelledby="destaques-title">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Portfólio em destaque</p>
+        <h2 class="section-title" id="destaques-title">
+          Músicas que já <span>emocionaram gente de verdade</span>
+        </h2>
+        <p class="section-lead">
+          Cada vídeo abaixo representa uma história única — uma paixão, um amor, uma turma, uma família.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <!-- Vídeo 1: Carro/Drone -->
+        <article class="video-card reveal reveal-delay-1"
+          data-video-id="_lXcYgWDf3o"
+          data-video-title="Homenagem com Clipe Profissional"
+          data-video-category="🚗 Paixões &amp; Conquistas"
+          data-video-url="https://youtu.be/_lXcYgWDf3o"
+          role="button" tabindex="0"
+          aria-label="Assistir: Homenagem com Clipe Profissional">
+          <div class="video-thumb">
+            <img data-src="https://img.youtube.com/vi/_lXcYgWDf3o/maxresdefault.jpg"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 alt="Miniatura: homenagem com drone e clipe profissional"
+                 loading="lazy" width="480" height="270">
+            <div class="video-play-btn">
+              <span class="play-circle">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-category">🚗 Paixões &amp; Conquistas</p>
+            <h3 class="video-title">Homenagem com Clipe Profissional</h3>
+            <p class="video-desc">Quando uma paixão merece virar arte — com imagens de drone e trilha sonora original.</p>
+          </div>
+        </article>
+
+        <!-- Vídeo 2: Esposa -->
+        <article class="video-card reveal reveal-delay-2"
+          data-video-id="ucuEjx-Mmd0"
+          data-video-title="Declaração de Amor"
+          data-video-category="💜 Amor &amp; Parceria"
+          data-video-url="https://youtu.be/ucuEjx-Mmd0"
+          role="button" tabindex="0"
+          aria-label="Assistir: Declaração de Amor">
+          <div class="video-thumb">
+            <img data-src="https://img.youtube.com/vi/ucuEjx-Mmd0/maxresdefault.jpg"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 alt="Miniatura: declaração de amor em música"
+                 loading="lazy" width="480" height="270">
+            <div class="video-play-btn">
+              <span class="play-circle">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-category">💜 Amor &amp; Parceria</p>
+            <h3 class="video-title">Declaração de Amor</h3>
+            <p class="video-desc">Para quem você dedicaria uma música? Esta foi feita para homenagear a pessoa amada.</p>
+          </div>
+        </article>
+
+        <!-- Vídeo 3: Família -->
+        <article class="video-card reveal reveal-delay-3"
+          data-video-id="eWwOuy8z8jo"
+          data-video-title="Celebrando a Família"
+          data-video-category="👨‍👩‍👧‍👦 Família &amp; Afeto"
+          data-video-url="https://youtu.be/eWwOuy8z8jo"
+          role="button" tabindex="0"
+          aria-label="Assistir: Celebrando a Família">
+          <div class="video-thumb">
+            <img data-src="https://img.youtube.com/vi/eWwOuy8z8jo/maxresdefault.jpg"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 alt="Miniatura: celebração familiar"
+                 loading="lazy" width="480" height="270">
+            <div class="video-play-btn">
+              <span class="play-circle">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-category">👨‍👩‍👧‍👦 Família &amp; Afeto</p>
+            <h3 class="video-title">Celebrando a Família</h3>
+            <p class="video-desc">Porque família é o multiverso mais importante. Uma música que abraça quem mais importa.</p>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+        <a href="portfolio.html" class="btn btn-outline" id="home-btn-verportfolio">
+          Ver todo o portfólio →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- TEASER PROCESSO -->
+  <section aria-labelledby="teaser-title">
+    <div class="container">
+      <div class="teaser-processo reveal">
+        <div class="teaser-icon">🎤</div>
+        <div>
+          <p class="section-label">Por que é diferente</p>
+          <h2 id="teaser-title">A IA canta. O artista <span style="background:linear-gradient(135deg,var(--primary-light),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">compõe.</span></h2>
+          <p>
+            Sérgio Melo escreve a letra, cria a melodia e dá alma à música — antes mesmo de abrir o computador.
+            O que a Inteligência Artificial faz é emprestar uma voz a essa criação. Entenda o processo criativo completo.
+          </p>
+          <a href="processo.html" class="btn btn-primary" id="home-btn-processo">
+            Descobrir o Processo Criativo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a id="whatsapp-float" class="whatsapp-float" href="#"></a>
+
+  <!-- VIDEO MODAL -->
+  <div class="modal-overlay" id="video-modal" role="dialog"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

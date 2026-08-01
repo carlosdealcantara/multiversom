@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sérgio Melo — Compositor | MultiverSOM</title>
+  <meta name="description" content="Conheça Sérgio Melo, o compositor por trás do MultiverSOM. Músico desde os anos 80, ele combina décadas de experiência com Inteligência Artificial para criar músicas autorais únicas.">
+  <link rel="icon" href="assets/logo/logomvm.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Estilos adicionais da página do compositor */
+    .about-section {
+      padding: 5rem 2rem;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 4rem;
+      align-items: start;
+      margin-top: 3rem;
+    }
+
+    .about-photo-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .about-photo {
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 50%;
+      box-shadow: 0 0 60px var(--glow-purple), var(--shadow-card);
+      border: 3px solid var(--border-bright);
+    }
+
+    .about-photo-glow {
+      position: absolute;
+      inset: -30px;
+      border-radius: 50%;
+      background: radial-gradient(ellipse, var(--glow-purple), transparent 70%);
+      z-index: -1;
+      animation: glow-pulse 3s ease-in-out infinite;
+    }
+
+    .about-content h2 {
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      font-weight: 800;
+      margin-bottom: 0.25rem;
+    }
+
+    .about-content .role {
+      font-size: 1rem;
+      color: var(--primary-light);
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content .bio {
+      font-size: 0.97rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .about-content .bio strong { color: var(--text); }
+
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-photo { max-width: 240px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation"></nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" aria-labelledby="compositor-h1">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <p class="page-breadcrumb"><a href="index.html">Início</a> / O Compositor</p>
+      <h1 id="compositor-h1">
+        O artista por trás<br>
+        <span style="background:linear-gradient(135deg,var(--primary-light),var(--accent-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">do Multiverso</span>
+      </h1>
+      <p>
+        Músico de coração, compositor por vocação e inovador por escolha.
+        Conheça a história de Sérgio Melo.
+      </p>
+    </div>
+  </header>
+
+  <!-- SOBRE -->
+  <section class="about-section" aria-labelledby="sobre-sergio">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- FOTO -->
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo-glow"></div>
+          <img src="assets/images/sergiomvm.jpg"
+               alt="Sérgio Melo, compositor do MultiverSOM"
+               class="about-photo"
+               width="360" height="360">
+        </div>
+
+        <!-- CONTEÚDO -->
+        <div class="about-content reveal reveal-delay-1">
+          <p class="section-label">O Compositor</p>
+          <h2 id="sobre-sergio">Sérgio Melo</h2>
+          <p class="role">🎵 Compositor · Músico · Criador do MultiverSOM</p>
+
+          <p class="bio">
+            Há décadas, <strong>Sérgio Melo</strong> compõe músicas que ficam na memória.
+            Não como hobby — como expressão genuína de quem sempre enxergou na música
+            a linguagem mais honesta que existe.
+          </p>
+
+          <p class="bio">
+            Ao longo dos anos, Sérgio fez músicas para a família, para os amigos, para grupos
+            que marcaram sua vida — muitas delas existindo apenas em fitas cassete ou na memória
+            de quem as ouviu. Com a chegada da Inteligência Artificial, especificamente o Suno,
+            ele encontrou uma forma de <strong>dar voz e produção profissional</strong> a tudo
+            que já havia criado — e ao que ainda está criando.
+          </p>
+
+          <p class="bio">
+            O que não mudou: <strong>a letra é dele, a melodia é dele, a alma é dele.</strong>
+            A IA entra para executar o que o artista já imaginou — como um músico de estúdio
+            que lê uma partitura e a interpreta com maestria.
+          </p>
+
+          <!-- STATS -->
+          <div class="stats-row">
+            <div class="stat-item">
+              <span class="stat-num">40+</span>
+              <span class="stat-label">anos com música</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">categorias de composição</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">2</span>
+              <span class="stat-label">idiomas de composição</span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="https://www.youtube.com/@MULTIVERSOMAUTORAL"
+               target="_blank" rel="noopener"
+               class="btn btn-outline"
+               id="compositor-btn-youtube">
+              ▶️ Ver canal no YouTube
+            </a>
+            <a href="contato.html" class="btn btn-primary" id="compositor-btn-contato">
+              ✨ Encomendar uma música
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- LINHA DO TEMPO -->
+  <section aria-labelledby="timeline-title">
+    <div class="container" style="max-width:780px;">
+      <div class="text-center reveal">
+        <p class="section-label">Trajetória</p>
+        <h2 class="section-title" id="timeline-title">
+          Uma vida <span>regada à música</span>
+        </h2>
+      </div>
+
+      <div class="timeline reveal" style="margin-top:3rem;">
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-year">1967</span>
+          </div>
+          <div class="timeline-left" style="align-items:center;">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-content">
+            <h4>Nasce Sérgio Melo</h4>
+            <p>18 de dezembro de 1967. Desde cedo, a música seria uma companheira inseparável.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-year">Anos 80</span>
+          </div>
+          <div class="timeline-left" style="align-items:center;">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-content">
+            <h4>Músico e compositor</h4>
+            <p>Sérgio começa a compor músicas e a se aprofundar na teoria musical. A veia artística vai moldando sua sensibilidade para as histórias humanas.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-year">1986</span>
+          </div>
+          <div class="timeline-left" style="align-items:center;">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-content">
+            <h4>Exército — uma turma que ficou na memória</h4>
+            <p>Sérgio serve ao Exército e constrói laços que durarão décadas. Décadas depois, homenagearia essa turma com uma música especial.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-year">Anos 2000+</span>
+          </div>
+          <div class="timeline-left" style="align-items:center;">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-content">
+            <h4>Músicas para quem ele ama</h4>
+            <p>Composições para família, amigos e grupos que marcaram sua vida. Cada música, uma história guardada com carinho.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-year">2023+</span>
+          </div>
+          <div class="timeline-left" style="align-items:center;">
+            <span class="timeline-dot"></span>
+            <span class="timeline-line"></span>
+          </div>
+          <div class="timeline-content">
+            <h4>MultiverSOM nasce</h4>
+            <p>Sérgio descobre o Suno e encontra a tecnologia que faltava para levar suas composições para o mundo com qualidade de estúdio. Nasce o projeto MultiverSOM.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-left">
+            <span class="timeline-year">2024+</span>
+          </div>
+          <div class="timeline-left" style="align-items:center;">
+            <span class="timeline-dot"></span>
+            <!-- sem linha — último item -->
+          </div>
+          <div class="timeline-content">
+            <h4>Primeira música comercial encomendada</h4>
+            <p>Um cliente contrata Sérgio para criar uma música e clipe completo com imagens de drone. O MultiverSOM valida seu potencial como negócio — e como arte.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CTA -->
+  <section style="text-align:center;" aria-labelledby="compositor-cta">
+    <div class="container reveal">
+      <p class="section-label">Próximo capítulo</p>
+      <h2 class="section-title" id="compositor-cta">
+        A próxima história pode <span>ser a sua</span>
+      </h2>
+      <p class="section-lead" style="margin:0 auto 2rem;">
+        Sérgio Melo está disponível para compor músicas sob encomenda para qualquer ocasião.
+        Basta ter uma história para contar.
+      </p>
+      <a href="contato.html" class="btn btn-primary" id="compositor-cta-btn">
+        ✨ Quero minha música
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a id="whatsapp-float" class="whatsapp-float" href="#"></a>
+
+  <!-- VIDEO MODAL -->
+  <div class="modal-overlay" id="video-modal" role="dialog"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
