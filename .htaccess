@@ -1,11 +1,17 @@
-﻿<IfModule mod_rewrite.c>
-Options -MultiViews
-RewriteEngine On
+<IfModule mod_rewrite.c>
+  Options -MultiViews
+  RewriteEngine On
 
-# Se o arquivo não existe como foi digitado...
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-# ...tente adicionar .html no final e ver se ele existe
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
+  # REGRA 1: Se a URL chegou com .html (jogada pelo servidor raiz),
+  # redireciona de volta para a versão limpa — usando THE_REQUEST
+  # que lê o pedido ORIGINAL do browser, nunca entra em loop.
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /[^?]*\.html[\ ?] [NC]
+  RewriteRule ^(.+)\.html$ $1 [R=301,L,NE]
+
+  # REGRA 2: Serve internamente o arquivo .html para URLs limpas
+  # (sem mudar nada na barra de endereços do browser)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)$ $1.html [L]
 </IfModule>
