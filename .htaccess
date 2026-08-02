@@ -1,3 +1,10 @@
 ﻿<IfModule mod_rewrite.c>
-RewriteEngine Off
+RewriteEngine On
+
+# Se o arquivo não existe como foi digitado...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# ...tente adicionar .html no final e ver se ele existe
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ .html [L]
 </IfModule>
