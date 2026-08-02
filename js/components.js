@@ -18,7 +18,7 @@
   const navbarEl = document.getElementById('navbar');
   if (navbarEl) {
     navbarEl.innerHTML = `
-      <a href="index.html" class="nav-logo" aria-label="Multiversom - Início">
+      <a href="./" class="nav-logo" aria-label="Multiversom - Início">
         <img src="assets/logo/logomvm.png" alt="Logo Multiversom" width="44" height="44">
         <span class="nav-logo-text">MultiverSOM</span>
       </a>

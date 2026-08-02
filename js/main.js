@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Marcar link ativo pelo pathname
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
   document.querySelectorAll('.nav-link[data-page]').forEach(link => {
     if (link.dataset.page === currentPage) link.classList.add('active');
   });
