@@ -4,13 +4,14 @@
    ========================================================= */
 
 (function () {
-  const CURRENT = window.location.pathname.split('/').pop() || 'index.html';
+  const rawPath = window.location.pathname.split('/').pop() || 'index';
+  const CURRENT = rawPath.replace('.html', '') || 'index';
 
   const NAV_LINKS = [
-    { href: 'index.html',      label: 'Início',           page: 'index.html' },
-    { href: 'processo.html',   label: 'O Processo',       page: 'processo.html' },
-    { href: 'portfolio.html',  label: 'Portfólio',        page: 'portfolio.html' },
-    { href: 'compositor.html', label: 'Sérgio Melo',      page: 'compositor.html' },
+    { href: './',           label: 'Início',           page: 'index' },
+    { href: 'processo',     label: 'O Processo',       page: 'processo' },
+    { href: 'portfolio',    label: 'Portfólio',        page: 'portfolio' },
+    { href: 'compositor',   label: 'Sérgio Melo',      page: 'compositor' },
   ];
 
   // ── NAVBAR ──
@@ -30,7 +31,7 @@
           </li>
         `).join('')}
         <li>
-          <a href="contato.html" class="nav-link nav-cta" data-page="contato.html"
+          <a href="contato" class="nav-link nav-cta" data-page="contato"
              id="nav-cta-btn">✨ Faça sua Música</a>
         </li>
       </ul>
@@ -62,7 +63,7 @@
             <h4>Páginas</h4>
             <ul>
               ${NAV_LINKS.map(l => `<li><a href="${l.href}">${l.label}</a></li>`).join('')}
-              <li><a href="contato.html">Faça sua Música</a></li>
+              <li><a href="contato">Faça sua Música</a></li>
             </ul>
           </div>
 
