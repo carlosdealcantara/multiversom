@@ -202,15 +202,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Audio wave decoration */
 .hero-wave {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 80px;
+  position: relative;
+  height: 60px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   gap: 3px;
-  padding: 0 2rem 1rem;
-  opacity: 0.3;
+  margin: 1.5rem auto;
+  opacity: 0.7;
   pointer-events: none;
 }
 
