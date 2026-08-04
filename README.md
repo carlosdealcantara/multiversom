@@ -1,6 +1,6 @@
 # MultiverSOM
 
-Site vitrine do projeto **MultiverSOM** — músicas autorais compostas por **Sérgio Melo**, com produção via Inteligência Artificial (Suno).
+Site vitrine do projeto **MultiverSOM** — músicas autorais compostas por **Sérgio Melo**, com produção baseada em ferramentas avançadas e minuciosa curadoria.
 
 ## 📁 Estrutura
 

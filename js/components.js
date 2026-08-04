@@ -55,7 +55,7 @@
             <p class="footer-tagline">
               Músicas autorais que tocam a alma.<br>
               Letra, melodia e alma — criadas por Sérgio Melo,<br>
-              com o poder da Inteligência Artificial.
+              com o mais alto padrão de produção musical.
             </p>
           </div>
 
