@@ -180,7 +180,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 6rem 2rem 4rem;
 }
 
@@ -203,19 +203,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* Audio wave decoration */
 .hero-wave {
   position: relative;
-  height: 60px;
+  width: 100%;
+  max-width: 360px;
+  height: 56px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   gap: 3px;
-  margin: 1.5rem auto;
-  opacity: 0.7;
+  margin: 0.5rem auto 0;
+  opacity: 0.65;
   pointer-events: none;
+  overflow: visible;
 }
 
 .hero-wave span {
   display: inline-block;
+  flex-shrink: 0;
   width: 3px;
+  min-height: 4px;
   background: linear-gradient(to top, var(--primary), var(--secondary));
   border-radius: 2px;
   animation: wave-dance var(--dur, 1.2s) ease-in-out infinite alternate;
