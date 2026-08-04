@@ -54,7 +54,7 @@
             </div>
             <p class="footer-tagline">
               Músicas autorais que tocam a alma.<br>
-              Letra, melodia e alma — criadas por Sérgio Melo,<br>
+              Letra, melodia e alma, criadas por Sérgio Melo,<br>
               com o mais alto padrão de produção musical.
             </p>
           </div>

@@ -1408,15 +1408,15 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 5rem 2rem 2rem;
-    gap: 0.25rem;
+    gap: 1rem;
     border-left: 1px solid var(--border);
     transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 998;
   }
 
   .nav-menu.open { right: 0; }
-  .nav-link { width: 100%; padding: 0.75rem 1rem; }
-  .nav-cta { width: 100%; text-align: center; margin-top: 1rem; }
+  .nav-link { width: 100%; padding: 0.75rem 1rem; font-size: 1.15rem; }
+  .nav-cta { width: 100%; text-align: center; margin-top: 2.5rem; }
   .nav-toggle { display: flex; z-index: 999; }
   .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
   .nav-toggle.open span:nth-child(2) { opacity: 0; }
