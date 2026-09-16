@@ -43,6 +43,7 @@
       <!-- FILTROS -->
       <div class="filter-bar" role="group" aria-label="Filtrar por categoria">
         <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
+        <button class="filter-btn" data-filter="carreira" id="filter-carreira">💼 Carreira &amp; Negócios</button>
         <button class="filter-btn" data-filter="paixoes" id="filter-paixoes">🚗 Paixões &amp; Conquistas</button>
         <button class="filter-btn" data-filter="amor" id="filter-amor">💜 Amor &amp; Parceria</button>
         <button class="filter-btn" data-filter="internacional" id="filter-internacional">🌍 Internacional</button>
@@ -50,15 +51,43 @@
         <button class="filter-btn" data-filter="familia" id="filter-familia">👨‍👩‍👧‍👦 Família &amp; Afeto</button>
         <button class="filter-btn" data-filter="releituras" id="filter-releituras">🎸 Releituras &amp; Resgates</button>
         <button class="filter-btn" data-filter="epocas" id="filter-epocas">🕰️ Nostalgia &amp; Épocas</button>
-        <button class="filter-btn" data-filter="biografias" id="filter-biografias">📖 Biografias &amp; Histórias</button>
+        <!-- <button class="filter-btn" data-filter="biografias" id="filter-biografias">📖 Biografias &amp; Histórias</button> -->
         <button class="filter-btn" data-filter="celebra" id="filter-celebra">🥂 Celebrações &amp; Bons Votos</button>
       </div>
 
       <!-- GRID DE VÍDEOS -->
       <div class="video-grid" style="margin-top:2rem;">
 
-        <!-- 1: Carro com Drone -->
+        <!-- 1: Carreira & Negócios (Professor de Inglês) -->
         <article class="video-card reveal"
+          data-filter="carreira"
+          data-video-id="8HRt_W80iAc"
+          data-video-title="Humanize sua Marca e Aumente Vendas"
+          data-video-category="💼 Carreira &amp; Negócios"
+          data-video-url="https://youtu.be/8HRt_W80iAc"
+          role="button" tabindex="0"
+          aria-label="Assistir: Humanize sua Marca e Aumente Vendas">
+          <div class="video-thumb">
+            <img data-src="https://img.youtube.com/vi/8HRt_W80iAc/hqdefault.jpg"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 alt="Música contando a trajetória profissional e aumentando conversão" loading="lazy" width="480" height="270">
+            <div class="video-play-btn">
+              <span class="play-circle">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="video-info">
+            <p class="video-category">💼 Carreira &amp; Negócios</p>
+            <h3 class="video-title">Humanize sua Marca e Aumente Vendas</h3>
+            <p class="video-desc">
+              A forma mais marcante de se apresentar ao mercado. Transforme a sua jornada profissional em uma música que engaja nas redes e no site, gerando conexões autênticas que convertem potenciais clientes.
+            </p>
+          </div>
+        </article>
+
+        <!-- 2: Carro com Drone -->
+        <article class="video-card reveal reveal-delay-1"
           data-filter="paixoes"
           data-video-id="_lXcYgWDf3o"
           data-video-title="Homenagem com Clipe Profissional"
@@ -257,7 +286,8 @@
           </div>
         </article>
 
-        <!-- 8: Biografias & Histórias -->
+        <!-- Card Biografias desativado temporariamente em prol de Carreira & Negócios -->
+        <!--
         <article class="video-card reveal"
           data-filter="biografias"
           data-video-id="hQfENgRJZmo"
@@ -284,6 +314,7 @@
             </p>
           </div>
         </article>
+        -->
 
         <!-- 9: Celebrações & Bons Votos -->
         <article class="video-card reveal"
