@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /dev/
+Allow: /
+
+Sitemap: https://multiversom.viaei.com/sitemap.xml
